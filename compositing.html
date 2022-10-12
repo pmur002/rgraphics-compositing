@@ -675,6 +675,7 @@ dev.off()</code></pre>
 <div id="proposal" class="section level2">
 <h2>Proposal</h2>
 <p><strong>Can we agree to conform to the original Porter-Duff and the (simple) SVG operator definitions?</strong> I think I can get both Cairo and Quartz to do this.</p>
+<p>The output below was generated using the <a href="https://svn.r-project.org/R/branches/R-defquartz/">R-defquartz</a> branch.</p>
 <div id="cairo" class="section level3">
 <h3>Cairo</h3>
 <p>Put an implicit group around each shape (when we are defining a group and the operator is “clear” or “source”). This would need a bit more work to make sure that stroke and fill are still treated as separate drawing operations.</p>

@@ -567,6 +567,9 @@ and fill are also implicitly grouped!).
 operator definitions?**  I think I can get both Cairo and Quartz to
 do this.
 
+The output below was generated using the 
+[R-defquartz](https://svn.r-project.org/R/branches/R-defquartz/) branch.
+
 ### Cairo
 
 Put an implicit group around each shape (when we are defining a group
