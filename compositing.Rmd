@@ -57,10 +57,17 @@ The image below shows the desired result for these operators
 with a "reddish" triangle as "src" and a "blueish"
 triangle as "dst". It is taken from the 
 [W3C Recommendation](https://www.w3.org/TR/2011/REC-SVG11-20110816/filters.html#feCompositeElement). 
-For now we are interested in the top two rows only, which show 
+SVG allows a variety of results, but the top two rows below show 
 a faithful adherence to the Porter-Duff results.
 The second row shows the slightly more complex results for semitransparent
 rectangles.
+
+The bottom two rows are a bit peculiar and do not correspond to
+any other output described in this document (for example, the "xor"
+result is particularly bizarre to me).  The comments in the example SVG
+code that accompanies this image say that:  'the background 
+sometimes shines through and i[n] other cases
+is blended into itself (i.e., "double-counting")'
 
 ![](feComposite.png)
 
@@ -556,7 +563,7 @@ and fill are also implicitly grouped!).
 
 ## Proposal
 
-**Can we agree to conform to the original Porter-Duff and the SVG
+**Can we agree to conform to the original Porter-Duff and the (simple) SVG
 operator definitions?**  I think I can get both Cairo and Quartz to
 do this.
 
